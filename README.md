@@ -6,10 +6,6 @@ Skill de design para IA (Claude Code e compatíveis): você descreve o site/app/
 
 ## Instalação / Install
 
-1. Crie um repositório no GitHub (ex.: `design-pro`) e suba esta pasta inteira.
-2. Edite `skills/design-pro/version.json` e troque `SEU-USUARIO/design-pro` pelo seu `usuario/repositorio`. Edite o nome em `LICENSE`.
-3. Quem for instalar roda:
-
 ```bash
 npx github:SEU-USUARIO/design-pro
 # ou
