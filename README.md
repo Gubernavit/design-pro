@@ -7,9 +7,9 @@ Skill de design para IA (Claude Code e compatíveis): você descreve o site/app/
 ## Instalação / Install
 
 ```bash
-npx github:SEU-USUARIO/design-pro
+npx github:Gubernavit/design-pro
 # ou
-git clone https://github.com/SEU-USUARIO/design-pro && node design-pro/install.mjs
+git clone https://github.com/Gubernavit/design-pro && node design-pro/install.mjs
 ```
 
 O instalador pergunta: idioma dos comandos (PT/EN), onde instalar, e então, **uma por uma**, se quer instalar as skills originais (frontend-design, emilkowalski, impeccable, taste) e os conectores (Playwright, Figma). Quem recusar tudo fica só com a skill padrão, que já traz o resumo dessas fontes.
