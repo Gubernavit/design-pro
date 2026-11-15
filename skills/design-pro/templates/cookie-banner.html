@@ -1,0 +1,28 @@
+<!-- Banner de cookies com carregamento condicional. Copiar para o projeto e adaptar aos tokens de design. -->
+<div id="cc" role="dialog" aria-labelledby="cc-t" aria-modal="false" hidden>
+  <p id="cc-t">Usamos cookies essenciais para o site funcionar e, se você permitir, de estatísticas e marketing. <a href="/cookies">Política de Cookies</a></p>
+  <button type="button" data-cc="all">Aceitar tudo</button>
+  <button type="button" data-cc="essential">Recusar não essenciais</button>
+  <button type="button" data-cc="custom">Escolher</button>
+</div>
+<script>
+(function(){
+  var KEY='cc-consent-v1', box=document.getElementById('cc');
+  function get(){try{return JSON.parse(localStorage.getItem(KEY))}catch(e){return null}}
+  function save(c){try{localStorage.setItem(KEY,JSON.stringify({stats:c.stats,mkt:c.mkt,at:new Date().toISOString(),v:1}))}catch(e){}}
+  function load(src){var s=document.createElement('script');s.src=src;s.async=true;document.head.appendChild(s)}
+  function apply(c){
+    if(c.stats){ /* load('[[URL DO SCRIPT DE ESTATÍSTICAS]]'); */ }
+    if(c.mkt){ /* load('[[URL DO SCRIPT DE MARKETING]]'); */ }
+  }
+  var saved=get();
+  if(saved){apply(saved)}else{box.hidden=false}
+  box.addEventListener('click',function(e){
+    var a=e.target.getAttribute('data-cc'); if(!a)return;
+    var c={stats:a==='all',mkt:a==='all'};
+    if(a==='custom'){c.stats=confirm('Permitir cookies de estatísticas?');c.mkt=confirm('Permitir cookies de marketing?')} /* trocar por painel acessível */
+    save(c);apply(c);box.hidden=true;
+  });
+  window.openCookiePrefs=function(){box.hidden=false}; /* ligar ao link "Preferências de cookies" do rodapé */
+})();
+</script>

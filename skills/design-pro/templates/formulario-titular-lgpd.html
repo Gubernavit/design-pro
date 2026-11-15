@@ -1,0 +1,52 @@
+<!doctype html>
+<html lang="pt-BR">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Solicitação do titular de dados — [[NOME DA EMPRESA]]</title>
+<!-- MODELO acessível. Ligar o action a um endpoint seguro (HTTPS). Estilizar com os tokens do projeto. -->
+<style>
+ :root{--fg:#1a1a2e;--bg:#fff;--accent:#2D2A6B;--err:#b00020}
+ body{font:1rem/1.6 system-ui,sans-serif;color:var(--fg);background:var(--bg);margin:0;padding:1rem}
+ form{max-width:40rem;margin:auto}
+ label{display:block;font-weight:600;margin-top:1rem}
+ input,select,textarea{width:100%;font:inherit;padding:.6rem;border:2px solid #555;border-radius:4px;box-sizing:border-box}
+ :focus-visible{outline:3px solid var(--accent);outline-offset:2px}
+ button{margin-top:1.5rem;padding:.8rem 1.4rem;font:inherit;background:var(--accent);color:#fff;border:0;border-radius:4px;min-height:44px}
+ .hint{font-size:.9rem;color:#444}
+</style>
+</head>
+<body>
+<main>
+<form action="[[ENDPOINT HTTPS]]" method="post">
+ <h1>Solicitação do titular de dados (LGPD)</h1>
+ <p class="hint">Atendemos em até [[15]] dias. Pedimos só o necessário para confirmar sua identidade e responder. Veja a <a href="/privacidade">Política de Privacidade</a>.</p>
+
+ <label for="nome">Nome completo</label>
+ <input id="nome" name="nome" autocomplete="name" required>
+
+ <label for="email">E-mail para resposta</label>
+ <input id="email" name="email" type="email" autocomplete="email" required>
+
+ <label for="tipo">O que você deseja?</label>
+ <select id="tipo" name="tipo" required>
+  <option value="">Selecione</option>
+  <option>Confirmar se tratam meus dados</option>
+  <option>Acessar meus dados</option>
+  <option>Corrigir dados incompletos ou incorretos</option>
+  <option>Anonimizar, bloquear ou eliminar dados</option>
+  <option>Portabilidade dos dados</option>
+  <option>Saber com quem os dados foram compartilhados</option>
+  <option>Revogar consentimento</option>
+  <option>Outro</option>
+ </select>
+
+ <label for="detalhes">Detalhes do pedido</label>
+ <textarea id="detalhes" name="detalhes" rows="5"></textarea>
+
+ <p class="hint">Podemos pedir um documento adicional apenas se for indispensável para confirmar que você é o titular.</p>
+ <button type="submit">Enviar solicitação</button>
+</form>
+</main>
+</body>
+</html>

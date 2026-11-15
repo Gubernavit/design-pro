@@ -1,0 +1,27 @@
+{
+  "prefix": "/dp-",
+  "commands": [
+    {"pt":"ajuda","en":"help","desc_pt":"Lista todos os comandos e para que servem","desc_en":"Lists all commands and what they do"},
+    {"pt":"criar","en":"build","desc_pt":"Cria o site/app completo a partir da sua descrição (design + legal + SEO/GEO + testes)","desc_en":"Builds the full site/app from your description (design + legal + SEO/GEO + tests)"},
+    {"pt":"legal","en":"legal","desc_pt":"Gera política de privacidade, termos, cookies e reembolso","desc_en":"Generates privacy policy, terms, cookies and refund pages"},
+    {"pt":"lgpd","en":"lgpd","desc_pt":"Formulário do titular e auditoria de conformidade LGPD","desc_en":"Data-subject form and LGPD compliance audit"},
+    {"pt":"riscos","en":"risks","desc_pt":"Relatório de riscos jurídicos do projeto","desc_en":"Legal-risk report for the project"},
+    {"pt":"acessibilidade","en":"a11y","desc_pt":"Corrige alt, contraste, teclado e semântica (WCAG 2.2 AA)","desc_en":"Fixes alt text, contrast, keyboard and semantics (WCAG 2.2 AA)"},
+    {"pt":"seo","en":"seo","desc_pt":"Configura SEO técnico e de conteúdo","desc_en":"Sets up technical and content SEO"},
+    {"pt":"geo","en":"geo","desc_pt":"Otimiza para ser citado por IAs (llms.txt, respostas diretas, entidade)","desc_en":"Optimizes to be cited by AI search (llms.txt, direct answers, entity)"},
+    {"pt":"performance","en":"perf","desc_pt":"Reduz peso: imagens WebP <300 KB, vídeo WebM, JS mínimo","desc_en":"Cuts weight: WebP images <300 KB, WebM video, minimal JS"},
+    {"pt":"imagens","en":"assets","desc_pt":"Confere tamanho/formato das imagens e vídeos e alt","desc_en":"Checks image/video size, format and alt text"},
+    {"pt":"auditar","en":"audit","desc_pt":"Auditoria completa: legal, acessibilidade, performance, SEO, design","desc_en":"Full audit: legal, accessibility, performance, SEO, design"},
+    {"pt":"polir","en":"polish","desc_pt":"Passe final de qualidade antes de publicar","desc_en":"Final quality pass before shipping"},
+    {"pt":"animar","en":"animate","desc_pt":"Adiciona movimento com propósito (sem exageros)","desc_en":"Adds purposeful motion (no excess)"},
+    {"pt":"tipografia","en":"type","desc_pt":"Melhora fontes, escala e hierarquia","desc_en":"Improves fonts, scale and hierarchy"},
+    {"pt":"layout","en":"layout","desc_pt":"Ajusta espaçamento, ritmo e hierarquia visual","desc_en":"Fixes spacing, rhythm and visual hierarchy"},
+    {"pt":"cores","en":"color","desc_pt":"Paleta, contraste e modo escuro","desc_en":"Palette, contrast and dark mode"},
+    {"pt":"degenericar","en":"de-generic","desc_pt":"Remove a cara de 'site feito por IA'","desc_en":"Removes the 'AI-made site' look"},
+    {"pt":"testar","en":"test","desc_pt":"Testa no navegador (Playwright): telas, teclado, rede, console","desc_en":"Browser tests (Playwright): screens, keyboard, network, console"},
+    {"pt":"figma","en":"figma","desc_pt":"Lê/desenha no Figma e constrói fiel ao design","desc_en":"Reads/draws in Figma and builds faithfully"},
+    {"pt":"atualizar","en":"update","desc_pt":"Verifica se há versão nova da skill e pergunta se quer atualizar","desc_en":"Checks for a new skill version and asks whether to update"},
+    {"pt":"creditos","en":"credits","desc_pt":"Mostra créditos e licenças das skills de origem","desc_en":"Shows credits and licenses of the source skills"},
+    {"pt":"idioma","en":"language","desc_pt":"Troca o idioma dos comandos (PT/EN)","desc_en":"Switches command language (PT/EN)"}
+  ]
+}

@@ -1,0 +1,48 @@
+{
+  "optional_skills": [
+    {
+      "id": "frontend-design",
+      "name": "frontend-design (Anthropic)",
+      "desc_pt": "Design de front-end distinto e intencional",
+      "desc_en": "Distinctive, intentional front-end design",
+      "cmd": "npx skills add https://github.com/anthropics/skills --skill frontend-design"
+    },
+    {
+      "id": "emilkowalski",
+      "name": "emilkowalski/skills",
+      "desc_pt": "Animações e movimento com propósito",
+      "desc_en": "Purposeful animation and motion",
+      "cmd": "npx skills@latest add emilkowalski/skills"
+    },
+    {
+      "id": "impeccable",
+      "name": "impeccable (Paul Bakaus)",
+      "desc_pt": "Layout, tipografia, espaçamento, cores e polimento",
+      "desc_en": "Layout, typography, spacing, color and polish",
+      "cmd": "npx impeccable install"
+    },
+    {
+      "id": "taste",
+      "name": "design-taste-frontend (Leonxlnx)",
+      "desc_pt": "Evita sites genéricos com cara de IA",
+      "desc_en": "Avoids generic AI-looking sites",
+      "cmd": "npx skills add https://github.com/Leonxlnx/taste-skill --skill \"design-taste-frontend\""
+    }
+  ],
+  "mcp": [
+    {
+      "id": "playwright",
+      "name": "Playwright MCP",
+      "desc_pt": "Permite à IA testar o site em um navegador real",
+      "desc_en": "Lets the AI test the site in a real browser",
+      "cmd": "claude mcp add playwright -- npx @playwright/mcp@latest"
+    },
+    {
+      "id": "figma",
+      "name": "Figma MCP",
+      "desc_pt": "Permite à IA ler e desenhar no Figma",
+      "desc_en": "Lets the AI read and draw in Figma",
+      "cmd": "claude mcp add --transport http figma https://mcp.figma.com/mcp"
+    }
+  ]
+}

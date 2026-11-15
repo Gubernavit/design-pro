@@ -1,0 +1,9 @@
+{
+  "name": "design-pro",
+  "version": "0.1.0",
+  "description": "Skill de design com conformidade legal BR (LGPD), SEO/GEO, acessibilidade e performance",
+  "type": "module",
+  "bin": { "design-pro": "install.mjs" },
+  "license": "MIT",
+  "files": ["install.mjs", "skills", "skills.json", "CREDITS.md", "README.md", "LICENSE"]
+}
